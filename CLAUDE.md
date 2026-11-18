@@ -39,7 +39,7 @@ Regola di lavoro: una fase alla volta (sezione 12 di `game-design.md`); a fine f
   - `src/lib/supabase/browser.ts` → client pubblico (lettura + Realtime).
   - `src/lib/supabase/server.ts` → client con secret key, `import "server-only"`, usato solo nelle Route Handlers.
   - Migrazioni SQL in `supabase/migrations/` (CLI Supabase non installata: si applicano dal SQL editor o con `npx supabase` quando servirà).
-- **Repo:** `git@github.com:FXD-Diegioooo/allitude-evento.git`, branch `main`. **Commit/push e deploy Vercel li fa Diego manualmente**: Claude prepara il codice, non fa push né deploy.
+- **Repo:** `git@github-fxd:FXD-Diegioooo/allitude-evento.git` (alias SSH in `~/.ssh/config` con la chiave dell’account FXD), branch `main`. **Commit/push e deploy Vercel li fa Diego manualmente**: Claude prepara il codice, non fa push né deploy.
 - **Env:** `.env.local` locale (ignorato da git), template in `.env.example`.
 - **Stile codice:** Prettier (printWidth 100, plugin Tailwind) + ESLint (next + prettier). Testi UI e commenti in italiano, identificatori in inglese.
 - **Struttura:** `src/app/{join,screen,admin}` per le tre viste, `src/app/api/*` per le API, `src/components`, `src/lib`, `src/stores` (Zustand).
